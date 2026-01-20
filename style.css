@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-family: cursive;
+    background-color: beige;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.year {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.container {
+    margin: 30px;
+    background-color: rgba(0, 0, 0, .1);
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+.container div {
+    margin: 0 15px; 
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: -25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+.container div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: .35em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+}
+
+.container #day::before {
+    content: "Days";
+}
+.container #minute::before {
+    content: "Minutes";
+}
+.container #hour::before {
+    content: "Hours";
+}
+.container #second::before {
+    content: "Seconds";
+}
